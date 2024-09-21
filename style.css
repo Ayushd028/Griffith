@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    position: fixed;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: black;
+}
+
+button{
+    color: #000;
+    /* top: 50%;
+    left: 50%; */
+}
+
+label{
+    color: #aa0a0a;
+    text-align: left;
+    padding: 5px;
+    
+}
+
+input{
+    color: #000;
+    background-color: ghostwhite;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    width: 40vw;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.subBtn{
+    background-color: black;
+    color: white;
+    width: 80px;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.machine{
+    top: 40px;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.machine *{
+    position: absolute;
+}
+
+
+#heart{
+    bottom: 20px;
+    left: 0;
+}
+
+#body{
+    bottom: 20px;
+    right: 0;;
+}
+
+#time{
+    color: white;
+    top: 40px;
+    left: 30px;
+}
+
+.inMiddle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: ghostwhite;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100000;
+    width: 50vw;
+    height: 60vh;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+}
+
+.inMiddle *{
+    position: static;
+}
+
+.inMiddle::-webkit-scrollbar{
+    display: block;
+}
+
+.inMiddle::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+.inMiddle::-webkit-scrollbar-thumb{
+    background: rgb(43, 42, 42);
+    border-radius: 10px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding: 3px;
+    background-color: ghostwhite;
+    border-radius: 50%;
+}
+.cont *{
+    position: absolute;
+}
+
+.cont{
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 50px; */
+}
+
+
+.battery{
+    /* top: 50px; */
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+}
+
+#battery{
+    color: white;
+    top: 40px;
+    left: 25px;
+}
+
+#internet{
+    color: white;
+    top: 40px;
+    left: 45px;
+}
+
+.clock{
+    /* top: 50px; */
+    width: 150px;
+    letter-spacing: 2px;
+}
+
+.internet{
+    top: 130px;
+    left: 5px;
+    width: 140px;
+}
+
+.temp{
+    top: -15px;
+    right: 30px;
+    text-align: right;
+    font-size: smaller;
+}
+
+.temp *{
+    position: static;
+}
+
+.messages{
+    position: static;
+}
+.messages{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    z-index: 1000;
+}
+
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.userMessage{
+    text-align: right;
+    width: 300px;
+    color: rgb(113, 113, 235);
+}
+
+.commands {
+    display: none; /* Ensure it's visible */
+    background-color: ghostwhite;
+    padding: 10px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow effect */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    max-height: 400px; /* Optional: limit the maximum height of the container */
+  }
+  
+  .commands p {
+    color: rgb(1, 1, 1);
+    margin: 5px 0; /* Add spacing between paragraphs */
+  }
+  
+
+.griffithMessage{
+    text-align: left;
+    width: 300px;
+    margin-top: 5px;
+    color: #040404;
+}
+
+/* #startGriffithBtn{
+    top: 230px;
+    z-index: 9999;
+} */
+
+#startGriffithBtn *{
+    width: 130px;
+    margin-left: 10px;
+    transition: transform ease-in-out 0.5s
+}
+
+#startGriffithBtn *:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+#startGriffithBtn{
+    border: none;
+    outline: none;
+    position: fixed;
+    left: 70px;
+    transform: translateX(0);
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#startGriffithBtn p{
+    font-size: 30px;
+}
+
+
+.smallGriffith {
+    position: absolute;
+    top: calc(100vh - 370px);
+    left: calc(100vw - 370px);
+  }
+  
+  .smallGriffith button {
+    background-color: black;
+    height: 370px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+  }
+  .smallGriffith button p {
+    font-size: 50px;
+  }
+  
+  .newGriffithWindow {
+    display: none;
+  }
+  
+  @media (max-width: 300px) {
+    .hide_on_small {
+      display: none;
+    }
+    .newGriffithWindow {
+      display: block;
+    }
+    #startGriffithBtn{
+      display: none;
+    }
+  }
+

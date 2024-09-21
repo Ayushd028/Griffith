@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Griffith: Your Personal AI Assistant....</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio src="./assets/power up.mp3" id="turnOn"></audio>
+    <div class="machine">
+      <div class="clock cont">
+        <img src="./assets/clock.png" class="icon" />
+        <p id="time"></p>
+      </div>
+      <div class="internet cont">
+        <img src="./assets/internet.png" class="icon" />
+        <p id="internet"></p>
+      </div>
+      <div class="battery cont">
+        <img src="./assets/battery.png" class="icon" />
+        <p id="battery"></p>
+      </div>
+      <button id="startGriffithBtn">
+        <img src="./assets/Griffith.gif" />
+      </button>
+
+      <div class="temp">
+        <p id="location"></p>
+        <p id="country"></p>
+        <p id="weatherT"></p>
+        <p id="weatherD"></p>
+        <img src="" id="weatherIcon" />
+        <p id="oTemp"></p>
+        <p id="feelLikeTemp"></p>
+        <p id="minT"></p>
+        <p id="maxT"></p>
+      </div>
+
+      <img src="./assets/body2.gif" id="body" />
+      <img src="./assets/heart.gif" id="heart" />
+    </div>
+
+    <div class="griffithSetup inMiddle">
+      <label> Your Name </label>
+      <input type="text" />
+      <br />
+      <label> Your Bio </label>
+      <input type="text" />
+      <br />
+      <label> Your Location </label>
+      <input type="text" />
+      <br />
+      <label> Your Instagram Profile </label>
+      <input type="text" />
+      <br />
+      <label> Your Github Profile </label>
+      <input type="text" />
+      <br />
+      <label> Your Linkedin Profile </label>
+      <input type="text" />
+      <br />
+      <button class="subBtn">Submit</button>
+    </div>
+
+    <div class="messages"></div>
+    <div class="commands inMiddle"></div>
+
+    <!-- <button id="start">SR Start</button> -->
+    <!-- <button id="stop">SR Stop</button>
+    <button id="speak">Speak</button> -->
+
+    <script src="./app.js" async defer></script>
+  </body>
+</html>
